@@ -1,24 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { TutorsAcademyHome } from "../components/tutors-academy-home";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Tutors Academy — Find the Right Tutor for Classes 1–12" },
+      { name: "description", content: "Find personalized academic support for Classes 1–12 across CBSE, ICSE, and State Boards with Tutors Academy." },
+      { property: "og:title", content: "Tutors Academy — The Right Tutor Can Change Everything" },
+      { property: "og:description", content: "Personalized tutor discovery and matching for students in Classes 1–12." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: TutorsAcademyHome,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
