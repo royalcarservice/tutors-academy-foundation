@@ -288,7 +288,7 @@
   .class-orbit-core { position: relative; z-index: 1; width: 43%; aspect-ratio: 1; display: grid; place-content: center; text-align: center; border-radius: 50%; color: var(--primary-foreground); background: var(--foreground); box-shadow: 0 25px 50px color-mix(in oklab, var(--foreground) 20%, transparent); }
   .class-orbit-core small { color: var(--warm); font-size: .55rem; letter-spacing: .1em; }.class-orbit-core strong { margin: .25rem 0; font: 700 1.7rem var(--font-display); }.class-orbit-core p { color: color-mix(in oklab, var(--background) 65%, transparent); font-size: .72rem; }
   .class-buttons { position: absolute; inset: 0; }
-  .class-buttons button { position: absolute; width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 50%; color: var(--foreground); background: var(--background); font-weight: 700; cursor: pointer; transition: transform .2s, background .2s, color .2s; }
+  .class-buttons button { position: absolute; width: 44px; height: 44px; border: 1px solid var(--border); border-radius: 50%; color: var(--foreground); background: var(--background); font-weight: 700; cursor: pointer; transition: transform .2s, background .2s, color .2s; }
   .class-buttons button:nth-child(1){left:13%;top:17%}.class-buttons button:nth-child(2){left:31%;top:5%}.class-buttons button:nth-child(3){left:53%;top:3%}.class-buttons button:nth-child(4){right:12%;top:16%}.class-buttons button:nth-child(5){right:2%;top:40%}.class-buttons button:nth-child(6){right:8%;bottom:18%}.class-buttons button:nth-child(7){right:29%;bottom:4%}.class-buttons button:nth-child(8){left:36%;bottom:2%}.class-buttons button:nth-child(9){left:14%;bottom:14%}.class-buttons button:nth-child(10){left:2%;bottom:38%}.class-buttons button:nth-child(11){left:4%;top:33%}.class-buttons button:nth-child(12){left:47%;top:23%}
   .class-buttons .class-active { color: var(--primary-foreground); background: var(--primary); transform: scale(1.16); }
   .why-section { background: var(--surface); }
@@ -325,7 +325,7 @@
 }
 
 @media (max-width: 430px) {
-  .brand{font-size:.9rem}.brand-mark{width:32px;height:32px}.hero h1{font-size:2.9rem}.hero-visual{min-height:390px}.profile-top{grid-template-columns:auto 1fr}.match-score{display:none}.subject-float{min-width:165px}.subject-grid{grid-template-columns:1fr}.finder-fields{grid-template-columns:1fr}.finder-fields label:last-child{grid-column:auto}.class-buttons button{width:36px;height:36px}.class-orbit-core strong{font-size:1.3rem}.credential-row{grid-template-columns:1fr}.credential-row div{min-height:70px}.footer-top{grid-template-columns:1fr}.footer-brand{grid-column:auto}
+  .brand{font-size:.9rem}.brand-mark{width:32px;height:32px}.hero h1{font-size:2.9rem}.hero-visual{min-height:390px}.profile-top{grid-template-columns:auto 1fr}.match-score{display:none}.subject-float{min-width:165px}.subject-grid{grid-template-columns:1fr}.finder-fields{grid-template-columns:1fr}.finder-fields label:last-child{grid-column:auto}.class-orbit-core strong{font-size:1.3rem}.credential-row{grid-template-columns:1fr}.credential-row div{min-height:70px}.footer-top{grid-template-columns:1fr}.footer-brand{grid-column:auto}
 }
 
 @media (prefers-reduced-motion: reduce) {
